@@ -1,0 +1,32 @@
+# Java-Projects # https://youtu.be/a9ymbRSTDF0
+I am designing, implementing, testing and documenting a visual application that communicates with a data persistence source. I will develop a comprehensive set of test data for the completed application. I will use the developed test data to ensure that the completed application is robust, correct, reliable. In my program I will include:
+A tabbed interface that will allow a user to create, read, update and delete records from an external source.  
+The interface will include a login and an about section
+My optional advance features will provide a help section and a data statistics section
+
+SQL FILE FOR GUI Application here
+
+create table "TREATS"
+(
+  "ID" VARCHAR (50) not null primary key, 
+  "MAKE" VARCHAR(50),
+  "FLAVOUR" VARCHAR(50),
+  "PURCHASED" VARCHAR(30),
+  "COLOR" VARCHAR(20),
+  "CONTAINS_NUTS" INTEGER default 0,
+  "VEGAN_FRIENDLY" INTEGER,
+  "CALORIES" INTEGER,  
+  "RATING" INTEGER
+);
+insert into treats values ('A1', 'Ben & Jerrys', 'Birthday Cake', 'Tesco', 'Red', 0, 1, 1170, 9);
+
+create table "CUSTOMER"
+(
+  "USERNAME" VARCHAR (30) not null primary key, 
+  "PASSWORD" VARCHAR(30)
+);
+insert into customer values ('Enoch', 'Enoch');
+insert into customer values ('Susan', 'Susan');
+
+
+*For more information please see my documentation. Thank you*
